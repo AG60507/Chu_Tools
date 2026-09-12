@@ -24,3 +24,60 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes pointer-wiggle {
+  0%,
+  100% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+}
+
+.pointer-wiggle {
+  animation: pointer-wiggle 2.2s ease-in-out infinite;
+  transform-origin: 50% 0%;
+}
+
+@keyframes winner-pop {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.winner-pop {
+  animation: winner-pop 0.45s ease-out;
+}
+
+@keyframes cup-shake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(7deg);
+  }
+  60% {
+    transform: rotate(-6deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+}
+
+.cup-shake {
+  animation: cup-shake 0.15s ease-in-out infinite;
+  transform-origin: 50% 100%;
+}
