@@ -34,6 +34,14 @@ const TOOLS: Tool[] = [
     accent: "from-amber-500 to-orange-600",
     glow: "bg-amber-400/30",
   },
+  {
+    href: "/tetris",
+    emoji: "🧱",
+    name: "俄羅斯方塊",
+    description: "經典方塊消除小遊戲,支援鍵盤與觸控操作,挑戰你的最高分。",
+    accent: "from-violet-500 to-indigo-500",
+    glow: "bg-violet-400/30",
+  },
 ];
 
 export default function Home() {
